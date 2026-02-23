@@ -1,0 +1,152 @@
+h2, p {
+    color: #055300;
+}
+
+a {
+    font-weight: bold;
+    color: #ceffa9;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+
+#background_blur {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#burger {
+    scale: 2;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+}
+
+#menu {
+    position: fixed;
+    background: #104a13;
+    height: 100%;
+    width: 50%;
+    top: 50%;
+    transform: translate(-105%, -50%);
+    z-index: 1;
+}
+
+#menu.show {
+    animation: show 1s forwards;
+}
+
+#menu.hide {
+    animation: hide 1s forwards;
+}
+
+@keyframes show {
+    from {
+        transform: translate(-105%, -50%);
+    }
+    to {
+        transform: translate(-5%, -50%);
+    }
+}
+
+@keyframes hide {
+    from {
+        transform: translate(-5%, -50%);
+    }
+    to {
+        transform: translate(-105%, -50%);
+    }
+}
+
+@media (min-width: 1024px) {
+    #menu {
+        width: 25%;
+    }
+}
+
+#menus {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+}
+
+.buttons {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:active {
+    background-color: #004010;
+}
+
+#lungs {
+    background-color: #004010;
+}
+
+#title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+#container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    column-gap: 40px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 701px) {
+    #container {
+        column-gap: 100px;
+        row-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    }
+}
+
+.name {
+    display: flex;
+    position: relative;
+    top: -20px;
+    width: auto;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+}
+
+.plant {
+    width: 120%;
+    height: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 20px #002209);
+    border-radius: 15px;
+}

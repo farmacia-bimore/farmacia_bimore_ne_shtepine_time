@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <title>Home</title>
+</head>
+<body>
+    <img src="../../Images/background.jpg" id="background" draggable="false">
+    <div id="background_blur" onpointerup="blur_background()"></div>
+    <i id="burger" data-lucide="menu" onpointerup="open_menu()"></i>
+    <div id="menu">
+        <div id="menus">
+            <a class="buttons" id="home">Home</a>
+            <a class="buttons" href="../Blood/Blood.html">Enët e gjakut</a>
+            <a class="buttons" href="../Veshkat/Veshkat.html">Veshkat</a>
+            <a class="buttons" href="../Stomach/Stomach.html">Stomaku dhe zorrët</a>
+            <a class="buttons" href="../Lungs/Lungs.html">Rrugët e trymëmarrjes</a>
+            <a class="buttons" href="../Brain/Brain.html">Sistemi nervor</a>
+        </div>
+    </div>
+
+    <h2 id="title">Bimët mjekësore në familje.</h2>
+    <div id="intro"> <!--* Just put the information -->
+        <div id="intro_text">
+            <h1 id="title_intro">Hyrja
+                <div id="title_line"></div>
+            </h1>
+            <h4 id="info_intro">Bimët mjekësore kanë qenë pjesë e jetës së njeriut për mijëra vite. Ato janë përdorur nga kultura të ndryshme për trajtimin dhe parandalimin e sëmundjeve në mënyrë natyrale. Sot, studimi i bimëve mjekësore vazhdon të jetë i rëndësishëm, pasi shumë prej tyre përmbajnë substanca aktive me vlerë për mjekësinë moderne.</h4>
+        </div>
+        <img src="../../Images/image_for_home_intro.png" id="title_img">
+    </div>
+
+    <div id="minimenu_container">
+        <div class="box" id="box_1" onpointerup="box_1()">
+            <h4 class="box_title">Çfarë janë bimët mjekësore?</h4>
+        </div>
+        <div class="box" id="box_2" onpointerup="box_2()">
+            <h4 class="box_title">Pse janë të rëndësishme?</h4>
+        </div>
+        <div class="box" id="box_3" onpointerup="box_3()">
+            <h4 class="box_title">Përdorimi tradicional dhe modern.</h4>
+        </div>
+    </div>
+    <div id="featured_things"> <!--* Just put the information -->
+        <h3 id="featured_text">Bimët mjekësore kanë pasur një rol të rëndësishëm në shëndetin e njeriut në kultura dhe periudha të ndryshme historike. Ato përmbajnë përbërës bioaktivë që mund të mbështesin sistemin imunitar, tretjen, relaksimin dhe mirëqenien e përgjithshme. Sot, studiuesit analizojnë përbërjen kimike të tyre për të kuptuar më mirë potencialin në mjekësinë moderne. Studimi i bimëve mjekësore lidh traditën natyrore me inovacionin shkencor.</h3>
+        <img src="../../Images/image_for_home_feature.jpg" id="feature_img">
+    </div>
+    <div id="galery_section">
+        <div class="track">
+            <div class="set">
+                <img class="galery_img" src="../../Images/plant_1_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_2_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_3_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_4_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_5_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_6_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_7_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_8_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_9_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_10_gallery.JPG">
+            </div>
+
+            <div class="set">
+                <img class="galery_img" src="../../Images/plant_1_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_2_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_3_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_4_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_5_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_6_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_7_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_8_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_9_gallery.JPG">
+                <img class="galery_img" src="../../Images/plant_10_gallery.JPG">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="Home.js"></script>
+    <script src="../common.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
