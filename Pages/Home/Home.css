@@ -248,7 +248,8 @@ a {
 }
 
 .box_title {
-    padding: 20px;
+    text-align: center;
+    font-size: large;
 }
 
 @media (min-width: 1024px) {
