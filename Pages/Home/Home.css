@@ -114,7 +114,7 @@ a {
 
 #intro {
     position: relative;
-    height: 20%;
+    height: 35vh;
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
@@ -125,6 +125,9 @@ a {
 
 #intro_text {
     width: 60%;
+    position: relative;
+    top: 45%;
+    transform: translateY(-55%);
 }
 
 #title_line, #feature_line {
@@ -176,7 +179,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     height: 150px;
-    width: 85%;
+    width: 90%;
     background-color: #b7fb0d52;
     padding: 15px;
     border-radius: 10px;
@@ -200,16 +203,9 @@ a {
 }
 
 #galery_section {
-    position: relative;
     top: 15vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    height: 150px;
+    height: 220px;
     overflow: hidden;
-    background-color: #b7fb0d52;
-    padding: 15px;
-    border-radius: 10px;
 }
 
 .track {
