@@ -53,10 +53,10 @@
 
 @media (min-width: 1024px) {
     #box_2_img {
-    width: 45%;
-    left: 33%;
-    height: 590px;
-    top: 40px;
+        width: 45%;
+        left: 33%;
+        height: 750px;
+        top: 100px;
     }
     #box_2 {
         position: absolute;
